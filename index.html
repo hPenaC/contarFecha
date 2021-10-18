@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contador Cumpleaños</title>
+  
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="title-container">
+      <span>- Contador para -</span>
+      <h3 onfocusout="guardarTexto(event)" contenteditable="true" id="titleText">Fecha</h3>
+      <p class="hint">Mes / Día / Año</p>
+    </div>
+    <div class="date-container">
+      <div class="item">
+        <p id="years">0</p>
+        <h6>Año(s)</h6>
+      </div>
+      <div class="item">
+        <p id="months">0</p>
+        <h6>Mes(es)</h6>
+      </div>
+      <div class="item">
+        <p id="days">0</p>
+        <h6>Día(s)</h6>
+      </div>
+      <div class="item">
+
+        <p id="hours">0</p>
+        <h6>Hora(s)</h6>
+      </div>
+      <div class="item">
+
+        <p id="minutes">0</p>
+        <h6>Minuto(s)</h6>
+      </div>
+    </div>
+    <button onclick="clearAll()">Reiniciar</button>
+  </div>
+  <script src="script.js"></script>  
+</body>
+</html>
